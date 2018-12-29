@@ -28,7 +28,7 @@ header{
 			height: 50px;
 			margin-top: 25px;
 			float: left;
-			
+			position: absolute;
 			li a{
 				display: block;
 				width: 165px;
@@ -42,7 +42,23 @@ header{
 					margin-top: 10px;
 				}
 			}
-			
+			.cake-nav {
+				position: absolute;
+				background: #fff;
+				height: 250px;
+				width: 125px;
+				left:185px;
+				top: 50px;
+				//padding: 0px 0 0px;
+				padding-top: 20px;
+				margin: 0 auto;
+				z-index:200000;
+				display:none;
+				li a{
+					margin-left: -18px;
+					border-right: none ;
+				}
+			}
 			li:last-of-type a{
 				border-right: none;
 			}
@@ -148,7 +164,56 @@ header{
 	width: 996px;
 	height: 450px;
 	overflow: hidden;
+	position: relative;
+	.item{
+		position: absolute;
+	}
+	#tabs{
+		position: absolute;
+		right: 400px;
+		bottom: 20px;
+		.tab{
+			float: left;
+			margin-right: 10px;
+			width: 6px;
+			height: 6px;
+			border: 3px solid rgba(184,178,182,8);
+			border-radius: 50%;
+			background: #989196;
+			cursor: pointer;
+		}
+		.active{
+			background: #fff;
+			border-color: #999497;
+		}
+	}
+	.btn{
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		width: 40px;
+		height: 50px;
+		color: #d6d3d5;
+		font-size: 36px;
+		line-height: 50px;
+		text-align: center;
+		cursor: pointer;
+		z-index: 10000000;
+	    background:rgba(127,120,125,0.3) ;
+		}
+	.btn:hover{
+		background: rgba(127,120,125,0.7);
+	}
+	.prev{
+		position: absolute;
+		left: 0;
+	}
+	.next{
+		position: absolute;
+		right: 0;
+	}
 }
+
 .index-tree{
 	width:996px;
 	height: 270px;
@@ -210,12 +275,14 @@ header{
 .footer{
 	width: 996px;
 	margin: 0 auto;
+	position: relative;
 	.f-help{
 		width: 996px;
 		height: 160px;
 		background: #ededed;
 		line-height: 25px;
 		position:absolute;
+		display:block;
 		.p-help{
 			width: 976px;
 			height: 25px;
@@ -254,9 +321,52 @@ header{
 	}
 	.lin{
 		width: 996px;
-		height: 400px;
-		border-top: 1px solid red;
-		background: #0000FF;
+		height: 200px;
+		border-top: 1px solid #ededed;
+		position: absolute;
+		top:170px;
+		padding-top: 10px;
+		font-size: 12px;
+		color:#898989;
+		line-height: 20px;
+		p{
+			position: absolute;
+			top:10px;
+			right: 0;
+			font-size: 13px;
+			color: #626262;
+			span{
+				display: block;
+				width: 40px;
+				height: 40px;
+			}
+			
+		}
+		.wx{
+			width: 180px;
+			height: 220px;
+			border:1px solid #ccc;
+			border-radius: 5px;
+			position: absolute;
+			left: 800px;
+			top:-200px;
+			z-index:2;
+			background: white;
+			display: none;
+			p{
+				height: 25px;
+				width: 165px;
+				border-bottom: 1px solid #ccc;
+				line-height: 25px;
+				padding-left: 15px;
+			}
+			img{
+				margin: 50px 15px;
+				height: 150px;
+				width: 150px;
+				display: block;
+			}
+		}
 	}
   }
   

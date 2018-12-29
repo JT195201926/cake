@@ -2,18 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>好利来</title>
 		
 		<link rel='stylesheet' href='../css/index.min.css'/>
 	
 	</head>
 	<body>
 		<header>
-			<img src="../img/indeximg/logo.min.png"/>
+			<a href='index.html'><img src="../img/indeximg/logo.min.png" /></a>
 			<div class="right">
 				<ul>
-					<li><a href="javascript:;">All Products<p>全部产品</p></a></li>
-					<li><a href="javascript:;">Cake Series<p>蛋糕系列</p></a></li>
+					<li><a href="list.html">All Products<p>全部产品</p></a></li>
+					<li id="cake-li"><a href="javascript:;">Cake Series<p>蛋糕系列</p></a>
+					<ul class="cake-nav" id="canav">
+						<li class="nav-li"><a href="list.html">经典系列</a></li>
+						<li><a href="">儿童系列</a></li>
+						<li><a href="">冰淇淋系列</a></li>
+						<li><a href="">珍爱系列</a></li>
+						<li><a href="">尊爱系列</a></li>
+					</ul>
+					</li>
 					<li><a href="javascript:;">Wagashi<p>零食糕点</p></a></li>
 					<li><a href="javascript:;">About Us<p>关于我们</p></a></li>
 				</ul>
@@ -36,21 +44,29 @@
 						<img src="../img/indeximg/cart_icon.min.png" class="buy"/>
 						<span>0件</span>
 					</div>
-					<a href="javascirpt:;" class="log">登录</a> 
-					<a href="javascirpt:;" class="regi">注册</a>
+					<a href="login.html" class="log">登录</a> 
+					<a href="register.html" class="regi">注册</a>
 				</div>
 			</div>
 		</header>
-		<div class="banner">
-			<img src="../img/indeximg/1451241729614010049.min.jpg"/>
-			<img src="../img/indeximg/1456986961694221493.min.jpg"/>
-			<img src="../img/indeximg/1457047833194068991.min.jpg" />
-			<img src="../img/indeximg/1464247474728938268.min.jpg"/>
+		<div class="banner" id="container">
+			<img src="../img/indeximg/1451241729614010049.min.jpg" class="item"/>
+			<img src="../img/indeximg/1456986961694221493.min.jpg" class="item"/>
+			<img src="../img/indeximg/1457047833194068991.min.jpg" class="item" />
+			<img src="../img/indeximg/1464247474728938268.min.jpg" class="item"/>
+			<div class="btn prev"> < </div>
+			<div class="btn next"> > </div>
+			<ul id="tabs">
+				<li class="tab active"></li>
+				<li class="tab"></li>
+				<li class="tab"></li>
+				<li class="tab"></li>		
+			</ul>
 		</div>
 		<div class="index-tree">
 			<div class="jingdian">
 				<img src="../img/indeximg/1456992198036601631.min.jpg" class="jdimg"/>
-				<a href="javascirpt:;" class="jd">经典系列<p>CLASSIC SERIES</p></a>
+				<a href="list.html" class="jd">经典系列<p>CLASSIC SERIES</p></a>
 			</div>
 			<div class="fashi">
 				<img src="../img/indeximg/1457139452033531016.min.jpg"/>
@@ -123,9 +139,20 @@
 			</div>
 			
 			</div>
-			<div class="lin">safrgdferhyjthmjmjytjehtger</div>
+			<div class="lin">
+				Copyright2010 &copy;北京市好利来食品有限公司 版权所有<br/>京icp备15012142<br/>好利来官方邮箱：info@holiland.com<br/><br/>客服电话：400-700-5999<br/><br/>注册地址：北京朝阳区观音堂文化大道甲6号北201室<br/>食品流通许可证：<br/>统一社会信用代码：91110105721420005Y
+				<p>FOLLOW US<span style="background: url(../img/indeximg/bj_2.min.png) no-repeat 4px -54px;" id="wimage"></span></p>
+				<div class="wx" id="wimg">
+					<p>在微信上关注我们</p>
+					<img src="../img/indeximg/weixin.min.jpg"  />
+				</div>
+			</div>
 			
 		</div>
-		
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/index.min.js"></script>
+		<script>
+			
+		</script>
 	</body>
 </html>

@@ -1,13 +1,13 @@
-var $cakeLi = $('#cake-li');
-var $cakeNav = $('#canav');
-// $('#canav').css('background','red');
-$cakeLi.mouseenter(function(){
-	$cakeNav.show();
-	
-})
-$cakeLi.mouseleave(function(){
-		$cakeNav.hide();
-	})
+// var $cakeLi = $('#cake-li');
+// var $cakeNav = $('#canav');
+// // $('#canav').css('background','red');
+// $cakeLi.mouseenter(function(){
+// 	$cakeNav.show();
+// 	
+// })
+// $cakeLi.mouseleave(function(){
+// 		$cakeNav.hide();
+// 	})
 	//移入微信图片显示
 	var $wImage = $('#wimage');
 	var $wImg = $('#wimg');

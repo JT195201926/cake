@@ -25,6 +25,13 @@ gulp.task('imagemin1',function(){
 	.pipe(rename({"suffix" : ".min"}))
 	.pipe(gulp.dest('./dist/img/listimg'));
 })
+gulp.task('imagemin2',function(){
+	gulp.src('./src/img/detailsimg/*')
+	.pipe(imagemin())
+	.pipe(rename({"suffix" : ".min"}))
+	.pipe(gulp.dest('./dist/img/detailsimg'));
+})
+
 gulp.task('sass',function(){
 	gulp.src('./src/sass/*.scss')
 	.pipe(sass())

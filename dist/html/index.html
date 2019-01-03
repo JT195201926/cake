@@ -153,6 +153,16 @@
 		<script src="../js/jquery-1.11.3.js"></script>
 		<script src="../js/index.min.js"></script>
 		<script>
+			var $cakeLi = $('#cake-li');
+			var $cakeNav = $('#canav');
+			// $('#canav').css('background','red');
+			$cakeLi.mouseenter(function(){
+				$cakeNav.show();
+				
+			})
+			$cakeLi.mouseleave(function(){
+					$cakeNav.hide();
+				})
 		</script>
 	</body>
 </html>

@@ -13,10 +13,10 @@
 			<span class="float_layer"></span>
 			<img src="../img/detailsimg/960_P_1545187857398.min.jpg" />
 		</div>
-		<div class="mcimage">
-			<div class="mimg">
-				<img src="../img/detailsimg/1545188089123384945.min.jpg"/>
-				<h2>喜悦圣诞</h2>
+		<div class="mcimage" >
+			<div class="mimg" data-good-id="sp1">
+				<img src="../img/detailsimg/1545188089123384945.min.jpg" class="img"/>
+				<h2 id="xiyue">喜悦圣诞</h2>
 				<p class="price">￥266</p>
 				<div class="ggsc ggscc">
 				<p class="gg ggg">规格 <input type="text" class="" value="请选择"/></p>
@@ -24,11 +24,11 @@
 				</div>
 				<div class="ggsc cjgwc">
 				<p class="gg cj">餐具 <input type="text" class="" value="请选择(免费)"</p>
-				<p class="sc gwc">加入购物车</p>
+				<input type="button" class="gwc addToCart" id = 'gwc'value="加入购物车"/>
 				</div>
 				<div class="ggsc slgm">
 				<p class="gg sl">数量 <span class="j">-</span><span class="text">1</span><span class="jj">+</span></p>
-				<p class="sc gm">立即购买</p>
+				<input type="button" class="sc gm" id="gm" value="立即购买"/>
 				</div>
 			</div>
 		</div>
@@ -61,6 +61,8 @@
 		<div class="footer"></div>
 		<script src="../js/jquery-1.11.3.js"></script>
 		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/jquery.fly.js"></script>
+		<script src="../js/requestAnimationFrame.js"></script>
 		<script src="../js/index.min.js"></script>
 		<script src="../js/details.min.js"></script>
 	</body>
